@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements  SearchView.OnQue
 
     @Override
     public boolean onQueryTextSubmit(String query) {
+
+        onQueryTextChange(query);
         return false;
     }
 
