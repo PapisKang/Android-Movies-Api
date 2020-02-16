@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@color/colorPrimary"
         android:clickable="true"
         android:focusable="true"
         android:orientation="vertical">
@@ -25,12 +25,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
+            android:background="@color/colorPrimary"
             android:scaleType="centerInside" />
 
         <TextView
             android:id="@+id/id"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@color/colorPrimary"
             android:visibility="invisible" />
 
         <TextView
@@ -38,15 +40,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textColor="#000000"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
             android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:clickable="true"
             android:focusable="true"
+
             android:orientation="horizontal">
 
             <TextView
@@ -54,7 +58,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="genre"
-                android:textColor="#000000"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
                 android:textSize="15dp"
                 android:gravity="left"
                 android:layout_weight="1"/>
@@ -62,8 +67,9 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@color/colorPrimary"
                 android:clickable="true"
+
                 android:focusable="true"
                 android:orientation="horizontal">
 
@@ -79,7 +85,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="vote"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
                     android:textSize="15dp"
                     android:gravity="right"
                     android:layout_weight="1"
@@ -94,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date de sortie"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="15dp" />
 
         <TextView
@@ -102,17 +109,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Duree"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="15dp" />
 
-        <include layout="@layout/lineseparator" />
+
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Overview"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -121,19 +128,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Overview"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             />
 
 
 
-        <include layout="@layout/lineseparator" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Productions"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -143,19 +150,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Productions"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="15dp"
             />
 
 
 
-        <include layout="@layout/lineseparator" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Similar movies"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -166,15 +173,16 @@
             android:scrollbars="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
-        <include layout="@layout/lineseparator" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Casting"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -185,15 +193,15 @@
             android:scrollbars="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
-        <include layout="@layout/lineseparator" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Videos"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -204,9 +212,10 @@
             android:scrollbars="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
-        <include layout="@layout/lineseparator" />
+
 
         <TextView
             android:id="@+id/homepage"
@@ -214,7 +223,7 @@
             android:layout_height="wrap_content"
             android:text="Link to homepage"
             android:linksClickable="true"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:autoLink="web"
             />
